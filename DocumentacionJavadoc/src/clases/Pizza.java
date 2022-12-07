@@ -15,7 +15,7 @@ public class Pizza {
 	/**
 	 * String size
 	 */
-	private String tamaño;
+	private String tamano;
 	/**
 	 * String type
 	 */
@@ -31,7 +31,7 @@ public class Pizza {
 	 */
 	public Pizza(String tipo, String tamano) {
 		this.tipo = tipo;
-		this.tamaño = tamano;
+		this.tamano = tamano;
 		this.estado = "pedida";
 		Pizza.totalPedidas++;
 	}
@@ -39,7 +39,7 @@ public class Pizza {
 	 * toString method
 	 */
 	public String toString() {
-		return "pizza " + this.tipo + " " + this.tamaño + ", " + this.estado;
+		return "pizza " + this.tipo + " " + this.tamano + ", " + this.estado;
 	}
 	/**
 	 * Orders total getter
