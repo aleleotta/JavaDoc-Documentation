@@ -5,17 +5,25 @@ package clases;
  */
 public class Libro {
 	/**
-	 * Class that contains all functions.
+	 * String title
 	 * @author aleleotta
 	 */
 	private String titulo;
-	
+	/**
+	 * String author
+	 * @author aleleotta
+	 */
 	private String autor;
-	
+	/**
+	 * String copies
+	 * @author aleleotta
+	 */
 	private int ejemplares;
-	
+	/**
+	 * String borrows
+	 * @author aleleotta
+	 */
 	private int prestados;
-
 	// constructor por defecto
 	/**
 	 * Constructor by default.
