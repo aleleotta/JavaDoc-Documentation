@@ -1,29 +1,57 @@
 package clases;
-
+/**
+ * Pizza class
+ * @author aleleotta
+ */
 public class Pizza {
-
+	/**
+	 * int ordered
+	 */
 	private static int totalPedidas = 0;
+	/**
+	 * int served
+	 */
 	private static int totalServidas = 0;
-
-	private String tamano;
+	/**
+	 * String size
+	 */
+	private String tamaño;
+	/**
+	 * String type
+	 */
 	private String tipo;
+	/**
+	 * String status
+	 */
 	private String estado;
-
+	/**
+	 * Constructor with parameters type and size.
+	 * @param tipo
+	 * @param tamano
+	 */
 	public Pizza(String tipo, String tamano) {
 		this.tipo = tipo;
-		this.tamano = tamano;
+		this.tamaño = tamano;
 		this.estado = "pedida";
 		Pizza.totalPedidas++;
 	}
-
+	/**
+	 * toString method
+	 */
 	public String toString() {
-		return "pizza " + this.tipo + " " + this.tamano + ", " + this.estado;
+		return "pizza " + this.tipo + " " + this.tamaño + ", " + this.estado;
 	}
-
+	/**
+	 * Orders total getter
+	 * @return
+	 */
 	public static int getTotalPedidas() {
 		return Pizza.totalPedidas;
 	}
-
+	/**
+	 * Served total getter
+	 * @return
+	 */
 	public static int getTotalServidas() {
 		return Pizza.totalServidas;
 	}
@@ -33,7 +61,6 @@ public class Pizza {
 	 * hubiera servido ya y se intenta servir de nuevo, se muestra el mensaje esa
 	 * pizza ya se ha servido
 	 */
-
 	public void sirve() {
 		if (this.estado.equals("pedida")) {
 			this.estado = "servida";
