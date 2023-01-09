@@ -80,5 +80,4 @@ public class Contador {
 			cont = 0;
 		}
 	}
-
 }
